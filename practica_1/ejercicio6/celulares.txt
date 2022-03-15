@@ -1,0 +1,18 @@
+1 200.00 Xiaomi
+0 50 hola mundo
+MI A2
+2 600.00 Apple
+40 20 alto celu mundo
+iPhone 8
+3 500.00 Samsung
+40 50 celu
+A50
+4 150.00 Nokia
+30 50 celu
+CELULARDURO
+5 200.00 Samsung
+60 30 celular de mierda gama baja
+A10
+6 1000.00 Apple
+0 20 El ultimo iphone con un 10 teras
+iPhone 20 Pro Max

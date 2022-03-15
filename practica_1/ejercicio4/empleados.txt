@@ -1,0 +1,3 @@
+Apellido: Brambilla Nombre: Miqueas Numero de empleado: 1 Edad: 21 Dni: 1 
+Apellido: Carrera Nombre: Ignacio Numero de empleado: 2 Edad: 21 Dni: 00 
+Apellido: Castillo Nombre: Franco Numero de empleado: 3 Edad: 71 Dni: 2 

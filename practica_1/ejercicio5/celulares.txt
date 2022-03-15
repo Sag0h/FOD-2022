@@ -1,0 +1,13 @@
+Codigo1
+Nombre:Mi A2
+Descripcion:  esta bueno y es barato calida precio
+Marca:  Xiaomi
+Precio:  1.5099000000000001E+002
+Stock minimo: 50
+Stock disponible: 20Codigo2
+Nombre:iPhone 13
+Descripcion:  alto phono pa
+Marca:  Apple
+Precio:  9.9999899999999998E+003
+Stock minimo: 60
+Stock disponible: 50

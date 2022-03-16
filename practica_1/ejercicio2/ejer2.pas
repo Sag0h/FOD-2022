@@ -20,10 +20,13 @@ var
     sum : integer;
     cant : integer;
     num: integer;
+    nombre: string;
 begin
+    write( 'Ingresar nombre del archivo a procesar: ');
+    readln(nombre);
     cant := 0;
     sum := 0;
-    Assign(f_int, 'C:\Users\mique\OneDrive\Escritorio\FOD\ejercicio1\archivo_ejer1');
+    Assign(f_int, nombre);
     reset(f_int);
     while( not Eof(f_int)) do begin
         read(f_int, num);

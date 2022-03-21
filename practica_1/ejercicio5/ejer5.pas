@@ -124,7 +124,7 @@ begin
     while (not eof(p)) do begin
         read(p,c);
         writeln(archivo_guardar, c.codigo, c.precio, c.marca);
-        writeln(archivo_guardar, c.stock_disponible, stock_minimo, c.descripcion);
+        writeln(archivo_guardar, c.stock_disponible, c.stock_minimo, c.descripcion);
         writeln(archivo_guardar, c.nombre);
     end;
     close(p);

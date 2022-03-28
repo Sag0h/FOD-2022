@@ -130,7 +130,6 @@ begin
 			minPos := i;
 		end;
 	end;
-	writeln('se determino un minimo');
 	leer(deta[minPos], reg_det[minPos]);
 	
 end;     
@@ -142,14 +141,11 @@ var
 	i:integer;
 	min:actualizacion;
 	regm:producto;
-	icast:string;
 	reg_det: arreglo_act;
 	totalvendido: integer;
 	codact: integer;
 begin
 	for i:= 1 to SUCURSALES do begin
-		Str(i,icast);
-		assign (detalles[i], 'detalle'+icast);  // preguntar si tengo que asignar de nuevo
 		reset( detalles[i] );
 		leer( detalles[i], reg_det[i]);
 	end;

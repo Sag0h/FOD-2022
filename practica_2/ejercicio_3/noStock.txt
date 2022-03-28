@@ -1,0 +1,2 @@
+Producto: 1 1 - stock disponible: -1 - $1.00.
+Producto: 2 2 - stock disponible: 1 - $2.00.

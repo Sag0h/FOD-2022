@@ -1,0 +1,3 @@
+ Partida numero: 1 Nombre y apellido: 1 1 Direccion 1 1 1 1 1 Nombre y apellido de la madre: 1 1 DNI de la madre: 1 Nombre y apellido del padre: 1 1 DNI del padre: 1 Informacion de deceso: Matricula del medico que firmo el deceso: 1 Fecha y hora: 1 lugar de deceso: 1 
+ Partida numero: 2 Nombre y apellido: 2 2 Direccion 2 2 2 2 2 Nombre y apellido de la madre: 2 2 DNI de la madre: 2 Nombre y apellido del padre: 2 2 DNI del padre: 2 Informacion de deceso: Matricula del medico que firmo el deceso: 2 Fecha y hora: 2 lugar de deceso: 2 
+ Partida numero: 3 Nombre y apellido: 3 3 Direccion 3 3 3 3 3 Nombre y apellido de la madre: 3 3 DNI de la madre: 3 Nombre y apellido del padre: 3 3 DNI del padre: 3 

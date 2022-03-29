@@ -25,8 +25,7 @@
 
 // f. Listar en un archivo de texto los alumnos que tengan más de cuatro materias
 // con cursada aprobada pero no aprobaron el final. Deben listarse todos los campos.
-// f -> ?? donde guardamos la info de una materia, si solo tenemos dos contadores, la condicion tiene que ser que los contadores sean <> o qué
-// sino como sabemos q de esas 4 aprobadas cursada no tienen el final tambien ? 
+
 // NOTA: Para la actualización del inciso e) los archivos deben ser recorridos sólo una vez.
 
 program ejer2;
@@ -46,8 +45,6 @@ type
         estado: char;
     end;
 
-    end;
-
     actualizacion = record
         cod: integer;
         info: info_materia;
@@ -64,7 +61,10 @@ begin
     reset(t);
     while(not eof(t))do begin
         with a do begin
-            read(t, cod, nom, ape, cant_a, cant_f);            
+            readln(t, cod);
+            readln(t, nom);
+            readln(t, ape);
+            readln(t, cant_a, cant_f);            
         end;
         write(m, a);
     end;
@@ -80,7 +80,8 @@ begin
     reset(t);
     while(not eof(t))do begin
         with a do begin
-            read(t, cod, info.nom_mat, info.estado);            
+            readln(t, cod, info.nom_mat);
+            readln(t, info.estado);            
         end;
         write(d, a);
     end;
@@ -143,7 +144,7 @@ begin
     while(a.cod <> valor_alto)do begin
         read(m, al);
         while(al.cod = a.cod)do begin            
-            if(a.info.estado = 'f' OR a.info.estado = 'F')then
+            if(a.info.estado = 'f') OR (a.info.estado = 'F')then
                 al.cant_f := al.cant_f + 1
             else
                 al.cant_a := al.cant_a + 1;
@@ -158,9 +159,19 @@ end;
 
 procedure listar_en_txt_alumnos(var m:maestro);
 var
-
+    a: alumno;
+    t: Text;
 begin
-    
+    assign(t, 'masDeCuatroSinFinal.txt');
+    rewrite(t);
+    reset(m);
+    while(not eof(m))do begin
+        read(m, a);
+        if(a.cant_a > 4)then
+            writeln(t, a.cod,' ',a.nom,' ', a.ape,' ', a.cant_a,' ', a.cant_f);
+    end;
+    close(t);
+    close(m);
 end;
 
 var
@@ -181,5 +192,5 @@ begin
     listar_detalle_en_txt(archivo_detalle); //D
 
     actualizar_maestro(archivo_maestro, archivo_detalle); //E
-    listar_en_txt_alumnos(archivo_maestro); //F ??? preguntar como se hace, no entiendo el enunciado
+    listar_en_txt_alumnos(archivo_maestro); //F 
 end.

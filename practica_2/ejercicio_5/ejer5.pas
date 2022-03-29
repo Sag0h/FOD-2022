@@ -303,7 +303,10 @@ begin
         end;
         minimo_nacimiento(det_n, vn, min_n);
     end;
-
+    for i:=1 to cant_archivos do begin
+        close(det_n[i]);
+        close(det_d[i]);
+    end;
     close(m);
     close(mt);
 end;

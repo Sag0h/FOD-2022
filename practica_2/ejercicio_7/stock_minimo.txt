@@ -1,0 +1,2 @@
+Codigo de producto: 1 Nombre: 1 Precio de venta: $1.00 Stock actual: 4 Stock minimo: 5
+Codigo de producto: 2 Nombre: 2 Precio de venta: $2.00 Stock actual: 10 Stock minimo: 11

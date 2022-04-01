@@ -118,6 +118,7 @@ var
     v_act:vector_logs;
     min:log;
     reg_m:logs;
+    reg:logs;
 begin
     rewrite(arch);
     //Abro los detalle y lleno el vector con el primer dato de cada detalle
@@ -131,6 +132,10 @@ begin
             reg_m.tiempo_total := reg_m.tiempo_total + min.tiempo; // sumo el tiempo total para ese codigo
             minimo(det, v_act, min); // busco el minimo de nuevo, si camia salgo del loop y escribo en maestro
         end;
+        read(arch, reg);
+        while(reg.cod_usuario <> reg_m.cod_usuario)do 
+            read(arch, reg);
+        seek(arch, filepos(arch)-1);
         write(arch, reg_m);
     end;
     close(arch);

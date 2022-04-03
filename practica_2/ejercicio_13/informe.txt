@@ -1,0 +1,2 @@
+nro_usuario: 1   Cantidad de mensajes enviados 16
+nro_usuario: 2   Cantidad de mensajes enviados 13

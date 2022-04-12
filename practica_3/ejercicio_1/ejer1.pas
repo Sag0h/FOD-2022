@@ -303,7 +303,7 @@ begin
     else begin
         seek(file_emp, filesize(file_emp)-1);
         truncate(file_emp);
-        writeln('Se elimino el empleado.'); 
+        writeln('Se elimino el empleado.');     
     end;
     close(file_emp);
 end;

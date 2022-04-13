@@ -142,8 +142,6 @@ var
 	min:actualizacion;
 	regm:producto;
 	reg_det: arreglo_act;
-	totalvendido: integer;
-	codact: integer;
 begin
 	for i:= 1 to SUCURSALES do begin
 		reset( detalles[i] );
@@ -153,18 +151,13 @@ begin
 	reset(a);
 	minimo(reg_det, min, detalles); {busco el detalle minimo}
 	while (min.cod <> VALOR_ALTO) do begin
-		totalvendido := 0;
-		codact := min.cod;
-		while(codact = min.cod ) do begin
-			totalvendido:= totalvendido + min.cantV;
+		read(a, regm);
+		while(regm.cod <> min.cod)do 
+			read(a, regm);
+		while(regm.cod = min.cod ) do begin
+			regm.stock := regm.stock - min.cantV;
 			minimo (reg_det, min, detalles);
 		end;
-		
-		read(a, regm);
-		while(regm.cod <> codact)do 
-			read(a, regm);
-		regm.stock := regm.stock - totalvendido;
-		
 		seek(a, filepos(a)-1);
 		write(a, regm);
 	end;    

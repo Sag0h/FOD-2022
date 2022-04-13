@@ -174,7 +174,7 @@ procedure show_maintenance_menu(var f:novel_file);
         read(f, nov);
         while(not eof(f))and(nov.code <> cod)do 
             read(f, nov);      
-        if(not eof(f))then begin
+        if(nov.code = cod)then begin
             modification_menu(nov);
             seek(f, filepos(f)-1);
             write(f, nov);
